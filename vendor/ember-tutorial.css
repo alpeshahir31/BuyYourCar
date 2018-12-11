@@ -1,0 +1,690 @@
+/*Main CSS File*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import "bootstrap";
+/**
+ * Base Elements
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h4, h5, h6, p, div, span, a {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background: #f3f3f3;
+  height: 100%;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.one {
+  margin-top: 40px;
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+.one h3{
+  text-align: center;
+  font-family: cursive;
+
+}
+.one p{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+.btn {
+  background-color: #2f7cc0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  max-width: 200px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 43% !important;
+  margin-right: 20%;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #085090;
+  color: white;
+}
+
+
+
+
+
+
+
+a {
+  color: #2185D0;
+  /*color: #000000;*/
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+section>p {
+  color: #FFFFFF;
+}
+
+section>h2 {
+  margin-left: 10px;
+  color: #000000;
+  font-size: 30px;
+}
+
+section>h3 {
+  color: #FFFFFF;
+}
+
+/**
+ * Button
+ */
+article>h3{
+  color: #900C3F;
+}
+
+article>h2{
+  color: #900C3F;
+}
+
+.price{
+  color: #2980B9;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.miles{
+  color: #3498DB;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.moredetailes{
+  color: #000000;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.moredetailes>li{
+  float: left;
+  list-style-type: square;
+  padding-left:220px;
+}
+
+.welcomeimg {
+  height: 20vh;
+  background: url('/assets/images/movingcar2.gif') no-repeat;
+  position: relative;
+  background-size: auto;
+  border-image: 20;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.button {
+  padding: 12px 30px 12px;
+  text-decoration: none;
+  color: #fff;
+  background: #085090;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  opacity: 0.9;
+  position: relative;
+}
+
+.buttoncardetails {
+  padding: 8px 8px 5px;
+  text-decoration: none;
+  color: #fff;
+  background: #085090;
+  border-radius: 1px;
+  border: none;
+  font-size: 9px;
+  opacity: 1;
+  margin: 0 130px auto;
+  position: relative;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/**
+ * Body Container
+ */
+
+.container {
+  /**max-width: 1024px;*/
+  min-height: 100vh;
+  background: #f9f9f9;
+  margin: 0 auto;
+}
+
+.containerCredit {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.containerOne{
+  float:left;
+  max-width: 500px;
+  width:50%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.containermiddle{
+  float: left;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.containerTwo{
+  float:left;
+  max-width: 500px;
+  width:50%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.confirmation{
+  height: 75vh !important;
+  }
+  .confirmation p{
+  margin-top: 10%;
+  font-family: cursive;
+  font-size: 20px;
+}
+.ty img{
+  margin-left: 55%;
+  margin-top: 4%;
+}
+/**
+ * Top Navigation
+ */
+
+.menu {
+  height: 4em;
+  width: 100%;
+  position: fixed;/*new*/
+  margin-bottom: 40px !important;/*new*/
+  background-color: #085090;
+
+}
+
+.menu h1 {
+  padding: 7px 0 0 20px;
+  color: #f9f9f9;
+  font-size: 1.5em;
+  font-family: 'Lato';
+}
+
+.menu h1 em {
+  position: relative;
+  left: -12px;
+}
+
+.menu a, .menu .links {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  line-height: 1;
+  padding: 0 15px;
+  color: #f9f9f9;
+  opacity: 0.85;
+}
+
+.menu a:hover, .menu a.active {
+  opacity: 1;
+}
+
+.menu .links {
+  padding: 0 15px;
+  margin-left: 600px;
+}
+
+.menu .links a {
+  position: relative;
+  bottom: auto;
+}
+
+.list-filter input {
+  padding: 11px;
+  font-size: 18px;
+  width: 500px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: solid 1px lightgray;
+  display: block;
+}
+
+.menu input:focus {
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.menu button {
+  margin-right: 15px;
+  position: relative;
+  top: -1px;
+  left: -5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #262626;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.menu button:hover {
+  background-color: #111;
+  opacity: 1;
+}
+
+.menu .results {
+  display: none;
+  position: absolute;
+  width: 215px;
+  top: 54px;
+  left: 10px;
+  background-color: #f6f6f6;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.results li {
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.menu .results li:hover {
+  background: #f3f3f3;
+}
+
+/**
+ * Content Area
+ */
+
+.body {
+  padding: 15px;
+  background-color: #EBEDEF;
+}
+
+/**
+ * Similar to Jumbotron
+ */
+
+.jumbo {
+  padding: 10px;
+  background: #f6f6f6;
+}
+
+.jumbo:hover {
+  background-color: #f3f3f3;
+}
+
+.jumbo h2 {
+  font-size: 3.2em;
+  margin-top: -25px;
+}
+
+.jumbo h3 {
+  font-size: 1.8em;
+  margin-top: -25px;
+}
+
+.jumbo h4 {
+  font-size: 1em;
+  margin-top: -25px;
+}
+
+.jumbo p {
+  margin-bottom: 25px;
+}
+
+.jumbo img {
+  height: 200px;
+  position: relative;
+  top: -25px;
+  right: -20px;
+}
+
+.jumbo button {
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: #00abff;
+}
+
+/**
+ * Individual Listings
+ */
+
+.listing {
+  margin-top: 15px;
+  background-color: #f6f6f6;
+  padding: 15px 50px;
+  min-height: 145px;
+  position: relative;
+}
+
+.listing:hover {
+  background-color: #f3f3f3;
+}
+
+.listing img {
+  height: 100px;
+  width: 175px;
+  float: left;
+  margin-right: 45px;
+  border-radius: 5px;
+  background-image: url("/assets/images/cars1.jpg");
+}
+
+.listing button {
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.listing a.image.wide {
+  max-width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+.listing .wide img {
+  height: initial;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.listing .wide small {
+  display: none;
+}
+
+.listing a.image {
+  max-width: 150px;
+  display: block;
+  cursor: pointer;
+}
+
+.listing small {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 136px;
+}
+
+.listing h3 {
+  padding: 0 15px 0 0;
+}
+
+.listing h3 a {
+  display: inline;
+}
+
+.listing .map {
+  position: absolute;
+  bottom: 13px;
+  right: 50px;
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.listing .detail {
+  width: 36%;
+  display: inline-block;
+  padding: 10px 15px 0 0;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.listing .detail span {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.show-listing .title {
+  margin-bottom: 15px;
+}
+
+.show-listing .detail-section {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.show-listing .owner {
+  margin-top: 10px;
+}
+
+.show-listing .rental-pic {
+  width: 50%;
+  height: initial;
+  position: static;
+}
+
+/**
+ * Utilities
+ */
+
+.light {
+  font-weight: 300;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.tomster {
+  background: url(../assets/images/teaching.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: -50px;
+}
+
+.aboutpage {
+  height: 40vh;
+  margin-top: 65px !important;
+  background: url('/assets/images/Logo-Collage.png') no-repeat center;
+  background-size: contain;
+  filter: opacity(50%);
+  margin-bottom: 20px;
+}
+.row_home p{
+  text-align: center;
+  margin-top: -30px;
+}
+
+.column_home1 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    margin-left: 3%;
+}
+
+.column_home1 img{
+  max-height: 90px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.column_home2 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    margin-left: 5%;
+
+}
+
+.column_home2 img{
+  max-height: 90px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.column_home3 {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    height: 150px;
+
+}
+
+.column_home3 img{
+  max-height: 90px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.column_home4 {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    height: 150px;
+}
+
+.column_home4 img{
+  max-height: 90px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+/* Clear floats after the columns */
+.row_home:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home{
+  height:100vh;
+  background:url('/assets/images/paybg.png') no-repeat center center;
+  background-size: cover;
+  margin-bottom:20px;
+  margin-top: 65px !important;/*new*/
+}
+.home h2{
+  color: #ffffff;
+}
+
+.homecenter {
+  height: 100vh;
+  background: url('/assets/images/bg1.gif') no-repeat center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.contactimg {
+  height: 60vh;
+  background: url('/assets/images/contact_banner.jpg') no-repeat center;
+  background-size: cover;
+  filter:opacity(80%);
+  margin-bottom: 20px;
+  border-image: 0;
+}
+
+
+.contactdiv {
+  width: 100%;
+  height: 100%;
+}
+
+.contactaddr {
+    display:inline-block;
+    position: absolute;
+    width:300px;
+    height:30%;
+    float:left;
+}
+
+.map {
+  display:inline-block;
+  margin-left: 300px;
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+.logo {
+  opacity: 50%;
+  margin-left: auto;
+}
