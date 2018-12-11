@@ -1,0 +1,46 @@
+{{yield}}
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    {{#each-in car.media as |category products|}}
+      {{#each (take 1 products) as |contestant|}}
+        <img src="{{contestant}}" alt="No Image Available">
+      {{/each}}
+    {{/each-in}}
+  <small><b>View Larger</b></small>
+  </a>
+
+  <h3>{{car.heading}}</h3>
+  <div>
+    <div class="detail miles">
+      <span>Miles:</span> {{car.miles}}
+    </div>
+    <div class="detail price">
+      <span>Price: $</span> <b>{{car.price}}</b>
+    </div>
+    <div align="right">
+      {{#link-to "buy" class="button" }}Buy{{/link-to}}
+    </div>
+    <br>
+    <div align="right">
+      {{#if moredetails}}
+        <button class="buttoncardetails" id="moredetails"  {{action "showMenu" "toggleDetails"}}><b>More Details </b></button>
+      {{/if}}
+      {{#if hidedetails}}
+        <button class="buttoncardetails" id="hidedetails"  {{action "showMenu" "toggleDetails"}}><b>Hide Details </b></button>
+      {{/if}}
+    </div>
+    <br>
+    <div>
+        {{#if isClicked}}
+        <div class="detail moredetailes" >
+          {{#each-in car.build as |category products|}}
+            <li>
+              {{category}}:   <b>{{products}}</b>
+            </li>
+          {{/each-in}}
+        {{outlet}}
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,47 @@
+<section class="home">
+  <h2>You are few steps away.........!!</h2>
+  {{#credit-card form="#my-form" }}
+    <form id='my-form' class='containerCredit'>
+        <div class="containerOne">
+          <p>Customer Information</p>
+          <div class="ui input">
+            {{input type="text" value=firstName name='firstName' placeholder='First Name'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=lastName name='lastName' placeholder='Last Name'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=contactNumber name='contactNumber' placeholder='+1 (000)-000-000'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=address name='address' placeholder='1234, Street, Apartment'}}
+          </div>
+        </div>
+        <div class="containermiddle">
+          <br>
+        </div>
+        <div class="containerTwo">
+          <p>Fill in details to complete your payment</p>
+          <div class="ui input">
+            {{input type="text" value=number name='number' placeholder='Credit Card Number'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=name name='name' placeholder='Name on Credit Card'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='expiry' value=expiration placeholder='MM/YY'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='CVV' value=cvc placeholder='CVV'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='email' value=email placeholder='Please type your e-mail address'}}
+          </div>
+        </div>
+      <div>
+         <button {{action "submit" "sendMail"}} class="button">Submit</button>
+      </div>
+
+    </form>
+  {{/credit-card}}
+</section>

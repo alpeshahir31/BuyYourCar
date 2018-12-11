@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+
+      <h1>
+        <img class="logo" src="/assets/images/l2.png" alt="BuyYourCar" align="middle" height="70" />
+         &ensp;Buy Your Car
+      </h1>
+    {{/link-to}}
+    <div class="links">
+      {{#link-to "home"}}
+        Home
+      {{/link-to}}
+      {{#link-to "about"}}
+        About Us
+      {{/link-to}}
+      {{#link-to "contact"}}
+        Contact Us
+      {{/link-to}}
+      {{#link-to "seecars"}}
+        View Cars
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>

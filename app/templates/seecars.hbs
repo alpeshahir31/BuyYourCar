@@ -1,0 +1,11 @@
+<body>
+    <div class="jumbo">
+      <br>
+      <h3>Welcome!</h3>
+    </div>
+    <p></p>
+    {{#each-in model.listings as |index carUnit|}}
+      {{car-listing car=carUnit}}
+    {{/each-in}}
+{{outlet}}
+</body>
